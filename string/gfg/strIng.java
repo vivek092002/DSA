@@ -1,4 +1,4 @@
-package com.DSA.string;
+package com.DSA.string.gfg;
 
 public class strIng {
     public static void main(String[] args) {
