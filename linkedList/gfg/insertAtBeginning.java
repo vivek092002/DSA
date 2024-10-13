@@ -24,7 +24,7 @@ public class insertAtBeginning {
         return temp;
     }
 
-    //printing the node of the linked list  
+    //printing the node of the linked list
     public static void rPrint(Node head){
         if (head == null){
             return;
