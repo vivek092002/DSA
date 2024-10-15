@@ -1,4 +1,4 @@
-package com.DSA.linkedList.gfg;
+package com.DSA.linkedList.SIngleLinkedList.gfg;
 
 public class insertAtPosition {
     public static void main(String[] args) {

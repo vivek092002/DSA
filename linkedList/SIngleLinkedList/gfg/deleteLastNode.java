@@ -1,6 +1,6 @@
-package com.DSA.linkedList.gfg;
+package com.DSA.linkedList.SIngleLinkedList.gfg;
 
-public class deleteHeadNode {
+public class deleteLastNode {
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
@@ -10,26 +10,34 @@ public class deleteHeadNode {
         System.out.println("Before Deletion");
         rPrint(head);
         System.out.println();
-        head = deleteNode(head);
+        head = deleteTail(head);
         System.out.println("After Deletion");
         rPrint(head);
 
     }
 
-    public static Node deleteNode(Node head){
-        if (head == null){
+    public static Node deleteTail(Node head){
+
+        if (head==null){
             return null;
-        } else {
-            head = head.next;
+        }
+        if (head.next == null){
+            return null;
+        }
+        Node curr = head;
+        while (curr.next.next != null){
+            curr = curr.next;
         }
 
+        curr.next = null;
         return head;
     }
+
     public static void rPrint(Node head){
         if (head == null){
             return;
         }
-        System.out.print(head.data + " ");
+        System.out.print("->" + head.data);
         rPrint(head.next);
     }
 }

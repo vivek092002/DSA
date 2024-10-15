@@ -1,4 +1,4 @@
-package com.DSA.linkedList.gfg;
+package com.DSA.linkedList.SIngleLinkedList.gfg;
 
 class Node{
     int data;
