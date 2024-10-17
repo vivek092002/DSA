@@ -1,4 +1,4 @@
-package com.DSA.linkedList.SIngleLinkedList.gfg;
+package com.DSA.linkedList.leetcode;
 
 import java.util.Stack;
 
