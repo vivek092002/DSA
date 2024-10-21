@@ -30,6 +30,30 @@ class MyStackLL{
         return (head==null);
     }
 
+    public void push(int x){
+        Node temp = new Node(x);
+        temp.next = head;
+        head = temp;
+        size++;
+    }
+
+    public int pop(){
+        if (head==null){
+            return Integer.MAX_VALUE;
+        }
+        int res = head.data;
+        head = head.next;
+        size--;
+        return res;
+    }
+
+    public int peek(){
+        if (head==null){
+            return Integer.MAX_VALUE;
+        }
+        return head.data;
+    }
+
 }
 
 public class LinkedListStack {
