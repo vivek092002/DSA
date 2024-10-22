@@ -32,7 +32,4 @@ public class LargestRectangleHistogram {
         return res;
     }
 
-    public static int largestArea1(int[] arr, int n){
-        
-    }
 }
