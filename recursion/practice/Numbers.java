@@ -20,6 +20,5 @@ public class Numbers {
 
     public static void Print4(int n){
         System.out.println(n);
-        Print2(20);
     }
 }
