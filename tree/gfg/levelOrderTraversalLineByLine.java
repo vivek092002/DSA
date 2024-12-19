@@ -3,7 +3,7 @@ package com.DSA.tree.gfg;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class levelOrderTraversal {
+public class levelOrderTraversalLineByLine {
     public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
@@ -17,13 +17,19 @@ public class levelOrderTraversal {
     }
 
     public static void printOrder(Node root){
-        if (root==null){
+        if (root == null){
             return;
         }
         Queue<Node> q = new LinkedList<Node>();
         q.add(root);
-        while (q.isEmpty() == false){
+        q.add(null);
+        while (q.size() > 1){
             Node curr = q.poll();
+            if (curr == null){
+                System.out.println();
+                q.add(null);
+                continue;
+            }
             System.out.print(curr.key + " ");
             if (curr.left != null){
                 q.add(curr.left);
